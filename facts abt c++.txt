@@ -1,0 +1,36 @@
+void add_x(node* head, int x){
+	node *p = head;
+	while(!p)
+	{
+		p->data += x;
+		p++;
+	}
+}
+
+node* delete_first(node* head){  // void delete_firet(node** head){ node*nxt = *head; *head=*head->next;free(*nxt);}
+	node* nxt = head;
+	head = head->next;
+	free(nxt);
+	return head;
+}
+
+
+int getNth(node* head, int n){
+	if(head==Null)
+		return;
+	count=1;
+	while(!head && count<n){
+		if(count==n)
+			return head->data;
+		head++;
+		count++;
+	}
+}
+
+void only_ptr_node(node* ptr){
+	node* nxt= ptr->next;
+	ptr->data = nxt->data;
+	node*nxt_nxt = nxt->next;
+	ptr->next=nxt_nxt;
+	free(nxt);
+}
