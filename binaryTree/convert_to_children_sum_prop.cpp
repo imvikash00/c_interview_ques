@@ -16,6 +16,7 @@ they both are not NULL. Let us always first increment the left child. Incrementi
 #include <cstdio>
 using namespace std;
 
+
 class btnode
 {
 public:
