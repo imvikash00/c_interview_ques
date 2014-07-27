@@ -29,6 +29,11 @@ Distance as Horizontal Distance of root plus 1
 
 */
 
+
+// Need to use hasp map but couldn't figured it out hw to use it
+// went with array but didn't worked
+// Need to figure it out how to  use array to do this
+
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
